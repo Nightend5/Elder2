@@ -1,0 +1,1608 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local hi = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local TopBar = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Close = Instance.new("TextButton")
+local Minimize = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Frame = Instance.new("Frame")
+local Player = Instance.new("TextButton")
+local Car = Instance.new("TextButton")
+local Wood = Instance.new("TextButton")
+local Misc = Instance.new("TextButton")
+local Dupe = Instance.new("TextButton")
+local Logo = Instance.new("TextLabel")
+local Player_2 = Instance.new("Frame")
+local Fill = Instance.new("Frame")
+local WSSlider = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local Fill_2 = Instance.new("Frame")
+local JPSlider = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Fill_3 = Instance.new("Frame")
+local HHSlider = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local Car_2 = Instance.new("Frame")
+local Fill_4 = Instance.new("Frame")
+local CarSpeed = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local Fill_5 = Instance.new("Frame")
+local SteerVelocity = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Fill_6 = Instance.new("Frame")
+local SteerAngle = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local Misc_2 = Instance.new("Frame")
+local TextLabel_8 = Instance.new("TextLabel")
+local FreezeWater = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local TextLabel_9 = Instance.new("TextLabel")
+local RemoveAC = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local GetML = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local TextLabel_10 = Instance.new("TextLabel")
+local TextLabel_11 = Instance.new("TextLabel")
+local ServerHP = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local Wood_2 = Instance.new("Frame")
+local TextLabel_12 = Instance.new("TextLabel")
+local TextLabel_13 = Instance.new("TextLabel")
+local FindSpookSinisterWD = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local ImageLabel = Instance.new("ImageLabel")
+local TextLabel_14 = Instance.new("TextLabel")
+local Dupe_2 = Instance.new("Frame")
+local TextLabel_15 = Instance.new("TextLabel")
+local Status = Instance.new("TextLabel")
+local Dupe_3 = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local TextLabel_16 = Instance.new("TextLabel")
+local DataSize = Instance.new("TextBox")
+local UICorner_15 = Instance.new("UICorner")
+local Home = Instance.new("Frame")
+local TextLabel_17 = Instance.new("TextLabel")
+local TextLabel_18 = Instance.new("TextLabel")
+local TextLabel_19 = Instance.new("TextLabel")
+local TextLabel_20 = Instance.new("TextLabel")
+local TextLabel_21 = Instance.new("TextLabel")
+
+--Properties:
+
+hi.Name = "hi"
+hi.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+hi.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = hi
+Main.BackgroundColor3 = Color3.fromRGB(18, 20, 26)
+Main.Position = UDim2.new(0.351523072, 0, 0.356842101, 0)
+Main.Size = UDim2.new(0, 396, 0, 271)
+
+TopBar.Name = "TopBar"
+TopBar.Parent = Main
+TopBar.BackgroundColor3 = Color3.fromRGB(24, 26, 33)
+TopBar.BorderSizePixel = 0
+TopBar.Size = UDim2.new(0, 396, 0, 28)
+
+UICorner.CornerRadius = UDim.new(0, 5)
+UICorner.Parent = TopBar
+
+Close.Name = "Close"
+Close.Parent = TopBar
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.946982026, 0, 0.107142858, 0)
+Close.Size = UDim2.new(0, 20, 0, 25)
+Close.Font = Enum.Font.Unknown
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(144, 146, 150)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+
+Minimize.Name = "Minimize"
+Minimize.Parent = TopBar
+Minimize.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Minimize.BackgroundTransparency = 1.000
+Minimize.Position = UDim2.new(0.879972696, 0, 0.107142858, 0)
+Minimize.Size = UDim2.new(0, 20, 0, 25)
+Minimize.Font = Enum.Font.Unknown
+Minimize.Text = "-"
+Minimize.TextColor3 = Color3.fromRGB(144, 146, 150)
+Minimize.TextScaled = true
+Minimize.TextSize = 14.000
+Minimize.TextWrapped = true
+
+UICorner_2.CornerRadius = UDim.new(0, 5)
+UICorner_2.Parent = Main
+
+Frame.Parent = Main
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0, 0, 0.103321031, 0)
+Frame.Size = UDim2.new(0, 396, 0, 21)
+
+Player.Name = "Player"
+Player.Parent = Frame
+Player.BackgroundColor3 = Color3.fromRGB(36, 39, 50)
+Player.BorderSizePixel = 0
+Player.Size = UDim2.new(0, 65, 0, 19)
+Player.Font = Enum.Font.SourceSans
+Player.Text = "Player"
+Player.TextColor3 = Color3.fromRGB(255, 255, 255)
+Player.TextScaled = true
+Player.TextSize = 14.000
+Player.TextWrapped = true
+
+Car.Name = "Car"
+Car.Parent = Frame
+Car.BackgroundColor3 = Color3.fromRGB(36, 39, 50)
+Car.BorderSizePixel = 0
+Car.Position = UDim2.new(0.164141417, 0, 0, 0)
+Car.Size = UDim2.new(0, 65, 0, 19)
+Car.Font = Enum.Font.SourceSans
+Car.Text = "Car"
+Car.TextColor3 = Color3.fromRGB(255, 255, 255)
+Car.TextScaled = true
+Car.TextSize = 14.000
+Car.TextWrapped = true
+
+Wood.Name = "Wood"
+Wood.Parent = Frame
+Wood.BackgroundColor3 = Color3.fromRGB(36, 39, 50)
+Wood.BorderSizePixel = 0
+Wood.Position = UDim2.new(0.328282833, 0, 0, 0)
+Wood.Size = UDim2.new(0, 65, 0, 19)
+Wood.Font = Enum.Font.SourceSans
+Wood.Text = "Wood"
+Wood.TextColor3 = Color3.fromRGB(255, 255, 255)
+Wood.TextScaled = true
+Wood.TextSize = 14.000
+Wood.TextWrapped = true
+
+Misc.Name = "Misc"
+Misc.Parent = Frame
+Misc.BackgroundColor3 = Color3.fromRGB(36, 39, 50)
+Misc.BorderSizePixel = 0
+Misc.Position = UDim2.new(0.49242425, 0, 0, 0)
+Misc.Size = UDim2.new(0, 65, 0, 19)
+Misc.Font = Enum.Font.SourceSans
+Misc.Text = "Misc"
+Misc.TextColor3 = Color3.fromRGB(255, 255, 255)
+Misc.TextScaled = true
+Misc.TextSize = 14.000
+Misc.TextWrapped = true
+
+Dupe.Name = "Dupe"
+Dupe.Parent = Frame
+Dupe.BackgroundColor3 = Color3.fromRGB(36, 39, 50)
+Dupe.BorderSizePixel = 0
+Dupe.Position = UDim2.new(0.656565666, 0, 0, 0)
+Dupe.Size = UDim2.new(0, 65, 0, 19)
+Dupe.Font = Enum.Font.SourceSans
+Dupe.Text = "Dupe"
+Dupe.TextColor3 = Color3.fromRGB(255, 255, 255)
+Dupe.TextScaled = true
+Dupe.TextSize = 14.000
+Dupe.TextWrapped = true
+
+Logo.Name = "Logo"
+Logo.Parent = Main
+Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo.BackgroundTransparency = 1.000
+Logo.Size = UDim2.new(0, 25, 0, 27)
+Logo.Font = Enum.Font.SourceSans
+Logo.Text = "E"
+Logo.TextColor3 = Color3.fromRGB(194, 198, 202)
+Logo.TextScaled = true
+Logo.TextSize = 14.000
+Logo.TextWrapped = true
+
+Player_2.Name = "Player"
+Player_2.Parent = Main
+Player_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Player_2.BackgroundTransparency = 1.000
+Player_2.Position = UDim2.new(0, 0, 0.173431739, 0)
+Player_2.Size = UDim2.new(0, 396, 0, 224)
+Player_2.Visible = false
+
+Fill.Name = "Fill"
+Fill.Parent = Player_2
+Fill.BackgroundColor3 = Color3.fromRGB(36, 39, 50)
+Fill.BorderColor3 = Color3.fromRGB(36, 39, 50)
+Fill.Position = UDim2.new(0.374922782, 0, 0.167691529, 0)
+Fill.Size = UDim2.new(0, 210, 0, 5)
+
+WSSlider.Name = "WSSlider"
+WSSlider.Parent = Fill
+WSSlider.AnchorPoint = Vector2.new(0.5, 0.5)
+WSSlider.BackgroundColor3 = Color3.fromRGB(50, 146, 255)
+WSSlider.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WSSlider.BorderSizePixel = 0
+WSSlider.Position = UDim2.new(0.0299999993, 0, 0.179000005, 0)
+WSSlider.Size = UDim2.new(0, 11, 0, 14)
+WSSlider.Font = Enum.Font.SourceSans
+WSSlider.Text = ""
+WSSlider.TextColor3 = Color3.fromRGB(0, 0, 0)
+WSSlider.TextSize = 14.000
+
+UICorner_3.CornerRadius = UDim.new(0, 3)
+UICorner_3.Parent = WSSlider
+
+TextLabel.Parent = Player_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+TextLabel.BackgroundTransparency = 0.800
+TextLabel.Position = UDim2.new(0, 0, 0.102678575, 0)
+TextLabel.Size = UDim2.new(0, 368, 0, 35)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = " Walkspeed"
+TextLabel.TextColor3 = Color3.fromRGB(194, 198, 202)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_2.Parent = Player_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+TextLabel_2.BackgroundTransparency = 0.800
+TextLabel_2.Position = UDim2.new(0, 0, 0.330357134, 0)
+TextLabel_2.Size = UDim2.new(0, 368, 0, 35)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "JumpPower"
+TextLabel_2.TextColor3 = Color3.fromRGB(194, 198, 202)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+
+Fill_2.Name = "Fill"
+Fill_2.Parent = Player_2
+Fill_2.BackgroundColor3 = Color3.fromRGB(36, 39, 50)
+Fill_2.BorderColor3 = Color3.fromRGB(36, 39, 50)
+Fill_2.Position = UDim2.new(0.392599553, 0, 0.399834365, 0)
+Fill_2.Size = UDim2.new(0, 203, 0, 5)
+
+JPSlider.Name = "JPSlider"
+JPSlider.Parent = Fill_2
+JPSlider.AnchorPoint = Vector2.new(0.5, 0.5)
+JPSlider.BackgroundColor3 = Color3.fromRGB(50, 146, 255)
+JPSlider.BorderColor3 = Color3.fromRGB(0, 0, 0)
+JPSlider.BorderSizePixel = 0
+JPSlider.Position = UDim2.new(0.0295241792, 0, 0.410711676, 0)
+JPSlider.Size = UDim2.new(0, 11, 0, 14)
+JPSlider.Font = Enum.Font.SourceSans
+JPSlider.Text = ""
+JPSlider.TextColor3 = Color3.fromRGB(0, 0, 0)
+JPSlider.TextSize = 14.000
+
+UICorner_4.CornerRadius = UDim.new(0, 3)
+UICorner_4.Parent = JPSlider
+
+Fill_3.Name = "Fill"
+Fill_3.Parent = Player_2
+Fill_3.BackgroundColor3 = Color3.fromRGB(36, 39, 50)
+Fill_3.BorderColor3 = Color3.fromRGB(36, 39, 50)
+Fill_3.Position = UDim2.new(0.364671946, 0, 0.640905797, 0)
+Fill_3.Size = UDim2.new(0, 214, 0, 5)
+
+HHSlider.Name = "HHSlider"
+HHSlider.Parent = Fill_3
+HHSlider.AnchorPoint = Vector2.new(0.5, 0.5)
+HHSlider.BackgroundColor3 = Color3.fromRGB(50, 146, 255)
+HHSlider.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HHSlider.BorderSizePixel = 0
+HHSlider.Position = UDim2.new(0.0299999993, 0, 0.65200001, 0)
+HHSlider.Size = UDim2.new(0, 11, 0, 14)
+HHSlider.Font = Enum.Font.SourceSans
+HHSlider.Text = ""
+HHSlider.TextColor3 = Color3.fromRGB(0, 0, 0)
+HHSlider.TextSize = 14.000
+
+UICorner_5.CornerRadius = UDim.new(0, 3)
+UICorner_5.Parent = HHSlider
+
+TextLabel_3.Parent = Player_2
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+TextLabel_3.BackgroundTransparency = 0.800
+TextLabel_3.Position = UDim2.new(0, 0, 0.571428537, 0)
+TextLabel_3.Size = UDim2.new(0, 368, 0, 35)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = " HipHeight"
+TextLabel_3.TextColor3 = Color3.fromRGB(194, 198, 202)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+
+Car_2.Name = "Car"
+Car_2.Parent = Main
+Car_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Car_2.BackgroundTransparency = 1.000
+Car_2.Position = UDim2.new(0, 0, 0.173431739, 0)
+Car_2.Size = UDim2.new(0, 396, 0, 224)
+Car_2.Visible = false
+
+Fill_4.Name = "Fill"
+Fill_4.Parent = Car_2
+Fill_4.BackgroundColor3 = Color3.fromRGB(36, 39, 50)
+Fill_4.BorderColor3 = Color3.fromRGB(36, 39, 50)
+Fill_4.Position = UDim2.new(0.410276324, 0, 0.265905827, 0)
+Fill_4.Size = UDim2.new(0, 210, 0, 5)
+
+CarSpeed.Name = "CarSpeed"
+CarSpeed.Parent = Fill_4
+CarSpeed.AnchorPoint = Vector2.new(0.5, 0.5)
+CarSpeed.BackgroundColor3 = Color3.fromRGB(50, 146, 255)
+CarSpeed.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CarSpeed.BorderSizePixel = 0
+CarSpeed.Position = UDim2.new(0.0299999993, 0, 0.179000005, 0)
+CarSpeed.Size = UDim2.new(0, 11, 0, 14)
+CarSpeed.Font = Enum.Font.SourceSans
+CarSpeed.Text = ""
+CarSpeed.TextColor3 = Color3.fromRGB(0, 0, 0)
+CarSpeed.TextSize = 14.000
+
+UICorner_6.CornerRadius = UDim.new(0, 3)
+UICorner_6.Parent = CarSpeed
+
+TextLabel_4.Parent = Car_2
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+TextLabel_4.BackgroundTransparency = 0.800
+TextLabel_4.Position = UDim2.new(0.0353535339, 0, 0.200892866, 0)
+TextLabel_4.Size = UDim2.new(0, 368, 0, 35)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Car Speed"
+TextLabel_4.TextColor3 = Color3.fromRGB(194, 198, 202)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_5.Parent = Car_2
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+TextLabel_5.BackgroundTransparency = 0.800
+TextLabel_5.Position = UDim2.new(0, 0, 0.03125, 0)
+TextLabel_5.Size = UDim2.new(0, 368, 0, 29)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "Sit in a car to choose veichle"
+TextLabel_5.TextColor3 = Color3.fromRGB(194, 198, 202)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+TextLabel_6.Parent = Car_2
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+TextLabel_6.BackgroundTransparency = 0.800
+TextLabel_6.Position = UDim2.new(0.0353535339, 0, 0.433035702, 0)
+TextLabel_6.Size = UDim2.new(0, 368, 0, 35)
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = "Steer Angle"
+TextLabel_6.TextColor3 = Color3.fromRGB(194, 198, 202)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+TextLabel_6.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_7.Parent = Car_2
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+TextLabel_7.BackgroundTransparency = 0.800
+TextLabel_7.Position = UDim2.new(0.0353535339, 0, 0.6875, 0)
+TextLabel_7.Size = UDim2.new(0, 368, 0, 35)
+TextLabel_7.Font = Enum.Font.SourceSans
+TextLabel_7.Text = "Steer Velocity"
+TextLabel_7.TextColor3 = Color3.fromRGB(194, 198, 202)
+TextLabel_7.TextSize = 30.000
+TextLabel_7.TextWrapped = true
+TextLabel_7.TextXAlignment = Enum.TextXAlignment.Left
+
+Fill_5.Name = "Fill"
+Fill_5.Parent = Car_2
+Fill_5.BackgroundColor3 = Color3.fromRGB(36, 39, 50)
+Fill_5.BorderColor3 = Color3.fromRGB(36, 39, 50)
+Fill_5.Position = UDim2.new(0.410276324, 0, 0.752512991, 0)
+Fill_5.Size = UDim2.new(0, 210, 0, 5)
+
+SteerVelocity.Name = "SteerVelocity"
+SteerVelocity.Parent = Fill_5
+SteerVelocity.AnchorPoint = Vector2.new(0.5, 0.5)
+SteerVelocity.BackgroundColor3 = Color3.fromRGB(50, 146, 255)
+SteerVelocity.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SteerVelocity.BorderSizePixel = 0
+SteerVelocity.Position = UDim2.new(0.0299999993, 0, 0.179000005, 0)
+SteerVelocity.Size = UDim2.new(0, 11, 0, 14)
+SteerVelocity.Font = Enum.Font.SourceSans
+SteerVelocity.Text = ""
+SteerVelocity.TextColor3 = Color3.fromRGB(0, 0, 0)
+SteerVelocity.TextSize = 14.000
+
+UICorner_7.CornerRadius = UDim.new(0, 3)
+UICorner_7.Parent = SteerVelocity
+
+Fill_6.Name = "Fill"
+Fill_6.Parent = Car_2
+Fill_6.BackgroundColor3 = Color3.fromRGB(36, 39, 50)
+Fill_6.BorderColor3 = Color3.fromRGB(36, 39, 50)
+Fill_6.Position = UDim2.new(0.410276324, 0, 0.498048693, 0)
+Fill_6.Size = UDim2.new(0, 210, 0, 5)
+
+SteerAngle.Name = "SteerAngle"
+SteerAngle.Parent = Fill_6
+SteerAngle.AnchorPoint = Vector2.new(0.5, 0.5)
+SteerAngle.BackgroundColor3 = Color3.fromRGB(50, 146, 255)
+SteerAngle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SteerAngle.BorderSizePixel = 0
+SteerAngle.Position = UDim2.new(0.0299999993, 0, 0.179000005, 0)
+SteerAngle.Size = UDim2.new(0, 11, 0, 14)
+SteerAngle.Font = Enum.Font.SourceSans
+SteerAngle.Text = ""
+SteerAngle.TextColor3 = Color3.fromRGB(0, 0, 0)
+SteerAngle.TextSize = 14.000
+
+UICorner_8.CornerRadius = UDim.new(0, 3)
+UICorner_8.Parent = SteerAngle
+
+Misc_2.Name = "Misc"
+Misc_2.Parent = Main
+Misc_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Misc_2.BackgroundTransparency = 1.000
+Misc_2.Position = UDim2.new(0, 0, 0.173431739, 0)
+Misc_2.Size = UDim2.new(0, 396, 0, 224)
+
+TextLabel_8.Parent = Misc_2
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+TextLabel_8.BackgroundTransparency = 0.800
+TextLabel_8.Position = UDim2.new(0, 0, 0.0758928582, 0)
+TextLabel_8.Size = UDim2.new(0, 328, 0, 35)
+TextLabel_8.Font = Enum.Font.SourceSans
+TextLabel_8.Text = " Freeze Water"
+TextLabel_8.TextColor3 = Color3.fromRGB(194, 198, 202)
+TextLabel_8.TextScaled = true
+TextLabel_8.TextSize = 14.000
+TextLabel_8.TextWrapped = true
+TextLabel_8.TextXAlignment = Enum.TextXAlignment.Left
+
+FreezeWater.Name = "FreezeWater"
+FreezeWater.Parent = Misc_2
+FreezeWater.BackgroundColor3 = Color3.fromRGB(51, 51, 61)
+FreezeWater.Position = UDim2.new(0.75252527, 0, 0.0963857174, 0)
+FreezeWater.Size = UDim2.new(0, 24, 0, 25)
+FreezeWater.Font = Enum.Font.SourceSans
+FreezeWater.Text = ""
+FreezeWater.TextColor3 = Color3.fromRGB(255, 255, 255)
+FreezeWater.TextScaled = true
+FreezeWater.TextSize = 14.000
+FreezeWater.TextWrapped = true
+
+UICorner_9.CornerRadius = UDim.new(0, 3)
+UICorner_9.Parent = FreezeWater
+
+TextLabel_9.Parent = Misc_2
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+TextLabel_9.BackgroundTransparency = 0.800
+TextLabel_9.Position = UDim2.new(0, 0, 0.316964298, 0)
+TextLabel_9.Size = UDim2.new(0, 328, 0, 35)
+TextLabel_9.Font = Enum.Font.SourceSans
+TextLabel_9.Text = " Remove Anti Cheat"
+TextLabel_9.TextColor3 = Color3.fromRGB(194, 198, 202)
+TextLabel_9.TextScaled = true
+TextLabel_9.TextSize = 14.000
+TextLabel_9.TextWrapped = true
+TextLabel_9.TextXAlignment = Enum.TextXAlignment.Left
+
+RemoveAC.Name = "RemoveAC"
+RemoveAC.Parent = Misc_2
+RemoveAC.BackgroundColor3 = Color3.fromRGB(51, 51, 61)
+RemoveAC.Position = UDim2.new(0.75252527, 0, 0.33745715, 0)
+RemoveAC.Size = UDim2.new(0, 24, 0, 25)
+RemoveAC.Font = Enum.Font.SourceSans
+RemoveAC.Text = ""
+RemoveAC.TextColor3 = Color3.fromRGB(255, 255, 255)
+RemoveAC.TextScaled = true
+RemoveAC.TextSize = 14.000
+RemoveAC.TextWrapped = true
+
+UICorner_10.CornerRadius = UDim.new(0, 3)
+UICorner_10.Parent = RemoveAC
+
+GetML.Name = "GetML"
+GetML.Parent = Misc_2
+GetML.BackgroundColor3 = Color3.fromRGB(51, 51, 61)
+GetML.Position = UDim2.new(0.75252527, 0, 0.578528583, 0)
+GetML.Size = UDim2.new(0, 24, 0, 25)
+GetML.Font = Enum.Font.SourceSans
+GetML.Text = ""
+GetML.TextColor3 = Color3.fromRGB(255, 255, 255)
+GetML.TextScaled = true
+GetML.TextSize = 14.000
+GetML.TextWrapped = true
+
+UICorner_11.CornerRadius = UDim.new(0, 3)
+UICorner_11.Parent = GetML
+
+TextLabel_10.Parent = Misc_2
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+TextLabel_10.BackgroundTransparency = 0.800
+TextLabel_10.Position = UDim2.new(0, 0, 0.558035731, 0)
+TextLabel_10.Size = UDim2.new(0, 328, 0, 35)
+TextLabel_10.Font = Enum.Font.SourceSans
+TextLabel_10.Text = " Get Max Land"
+TextLabel_10.TextColor3 = Color3.fromRGB(194, 198, 202)
+TextLabel_10.TextScaled = true
+TextLabel_10.TextSize = 14.000
+TextLabel_10.TextWrapped = true
+TextLabel_10.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_11.Parent = Misc_2
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+TextLabel_11.BackgroundTransparency = 0.800
+TextLabel_11.Position = UDim2.new(0, 0, 0.794642866, 0)
+TextLabel_11.Size = UDim2.new(0, 328, 0, 35)
+TextLabel_11.Font = Enum.Font.SourceSans
+TextLabel_11.Text = " Serverhopper (Finds Old Servers)"
+TextLabel_11.TextColor3 = Color3.fromRGB(194, 198, 202)
+TextLabel_11.TextSize = 26.000
+TextLabel_11.TextWrapped = true
+TextLabel_11.TextXAlignment = Enum.TextXAlignment.Left
+
+ServerHP.Name = "ServerHP"
+ServerHP.Parent = Misc_2
+ServerHP.BackgroundColor3 = Color3.fromRGB(51, 51, 61)
+ServerHP.Position = UDim2.new(0.75252527, 0, 0.815135717, 0)
+ServerHP.Size = UDim2.new(0, 24, 0, 25)
+ServerHP.Font = Enum.Font.SourceSans
+ServerHP.Text = ""
+ServerHP.TextColor3 = Color3.fromRGB(255, 255, 255)
+ServerHP.TextScaled = true
+ServerHP.TextSize = 14.000
+ServerHP.TextWrapped = true
+
+UICorner_12.CornerRadius = UDim.new(0, 3)
+UICorner_12.Parent = ServerHP
+
+Wood_2.Name = "Wood"
+Wood_2.Parent = Main
+Wood_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Wood_2.BackgroundTransparency = 1.000
+Wood_2.Position = UDim2.new(0, 0, 0.173431739, 0)
+Wood_2.Size = UDim2.new(0, 396, 0, 224)
+Wood_2.Visible = false
+
+TextLabel_12.Parent = Wood_2
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+TextLabel_12.BackgroundTransparency = 0.800
+TextLabel_12.Position = UDim2.new(-0.00102095166, 0, 0.0491071418, 0)
+TextLabel_12.Size = UDim2.new(0, 368, 0, 34)
+TextLabel_12.Font = Enum.Font.SourceSans
+TextLabel_12.Text = " Find Spook / Sinister Wood"
+TextLabel_12.TextColor3 = Color3.fromRGB(194, 198, 202)
+TextLabel_12.TextSize = 32.000
+TextLabel_12.TextWrapped = true
+TextLabel_12.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_13.Parent = Wood_2
+TextLabel_13.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+TextLabel_13.BackgroundTransparency = 0.800
+TextLabel_13.Position = UDim2.new(-0.00102095166, 0, 0.233766153, 0)
+TextLabel_13.Size = UDim2.new(0, 368, 0, 37)
+TextLabel_13.Font = Enum.Font.SourceSans
+TextLabel_13.Text = "If you don't teleport it means that there isint spook or sinister in this server"
+TextLabel_13.TextColor3 = Color3.fromRGB(194, 198, 202)
+TextLabel_13.TextScaled = true
+TextLabel_13.TextSize = 32.000
+TextLabel_13.TextWrapped = true
+
+FindSpookSinisterWD.Name = "FindSpookSinisterWD"
+FindSpookSinisterWD.Parent = Wood_2
+FindSpookSinisterWD.BackgroundColor3 = Color3.fromRGB(51, 51, 61)
+FindSpookSinisterWD.Position = UDim2.new(0.85413754, 0, 0.0697817132, 0)
+FindSpookSinisterWD.Size = UDim2.new(0, 23, 0, 24)
+FindSpookSinisterWD.Font = Enum.Font.SourceSans
+FindSpookSinisterWD.Text = ""
+FindSpookSinisterWD.TextColor3 = Color3.fromRGB(255, 255, 255)
+FindSpookSinisterWD.TextScaled = true
+FindSpookSinisterWD.TextSize = 14.000
+FindSpookSinisterWD.TextWrapped = true
+
+UICorner_13.CornerRadius = UDim.new(0, 3)
+UICorner_13.Parent = FindSpookSinisterWD
+
+ImageLabel.Parent = Wood_2
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0.310606062, 0, 0.352678567, 0)
+ImageLabel.Size = UDim2.new(0, 150, 0, 138)
+ImageLabel.Image = "rbxassetid://11412550867"
+ImageLabel.ImageColor3 = Color3.fromRGB(0, 234, 255)
+
+TextLabel_14.Parent = Wood_2
+TextLabel_14.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+TextLabel_14.BackgroundTransparency = 0.800
+TextLabel_14.Position = UDim2.new(-0.00102095166, 0, 0.831980586, 0)
+TextLabel_14.Size = UDim2.new(0, 396, 0, 37)
+TextLabel_14.Font = Enum.Font.SourceSans
+TextLabel_14.Text = "This section is currently still being worked on!"
+TextLabel_14.TextColor3 = Color3.fromRGB(194, 198, 202)
+TextLabel_14.TextScaled = true
+TextLabel_14.TextSize = 32.000
+TextLabel_14.TextWrapped = true
+
+Dupe_2.Name = "Dupe"
+Dupe_2.Parent = Main
+Dupe_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Dupe_2.BackgroundTransparency = 1.000
+Dupe_2.Position = UDim2.new(0, 0, 0.173431739, 0)
+Dupe_2.Size = UDim2.new(0, 396, 0, 224)
+Dupe_2.Visible = false
+
+TextLabel_15.Parent = Dupe_2
+TextLabel_15.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+TextLabel_15.BackgroundTransparency = 0.800
+TextLabel_15.Position = UDim2.new(-0.00102095166, 0, 0.0491071418, 0)
+TextLabel_15.Size = UDim2.new(0, 368, 0, 34)
+TextLabel_15.Font = Enum.Font.SourceSans
+TextLabel_15.Text = " Dupe Axes"
+TextLabel_15.TextColor3 = Color3.fromRGB(194, 198, 202)
+TextLabel_15.TextSize = 32.000
+TextLabel_15.TextWrapped = true
+TextLabel_15.TextXAlignment = Enum.TextXAlignment.Left
+
+Status.Name = "Status"
+Status.Parent = Dupe_2
+Status.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Status.BackgroundTransparency = 0.800
+Status.Position = UDim2.new(-0.00102095166, 0, 0.796266258, 0)
+Status.Size = UDim2.new(0, 395, 0, 37)
+Status.Font = Enum.Font.SourceSans
+Status.Text = "To perform : data size you can find in the slot menu of the slot selected that you want to dupe, then this will dupe the axes"
+Status.TextColor3 = Color3.fromRGB(194, 198, 202)
+Status.TextScaled = true
+Status.TextSize = 32.000
+Status.TextWrapped = true
+
+Dupe_3.Name = "Dupe"
+Dupe_3.Parent = Dupe_2
+Dupe_3.BackgroundColor3 = Color3.fromRGB(51, 51, 61)
+Dupe_3.Position = UDim2.new(0.85413754, 0, 0.0697817132, 0)
+Dupe_3.Size = UDim2.new(0, 23, 0, 24)
+Dupe_3.Font = Enum.Font.SourceSans
+Dupe_3.Text = ""
+Dupe_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Dupe_3.TextScaled = true
+Dupe_3.TextSize = 14.000
+Dupe_3.TextWrapped = true
+
+UICorner_14.CornerRadius = UDim.new(0, 3)
+UICorner_14.Parent = Dupe_3
+
+TextLabel_16.Parent = Dupe_2
+TextLabel_16.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+TextLabel_16.BackgroundTransparency = 0.800
+TextLabel_16.Position = UDim2.new(-0.00252525252, 0, 0.316964298, 0)
+TextLabel_16.Size = UDim2.new(0, 369, 0, 35)
+TextLabel_16.Font = Enum.Font.SourceSans
+TextLabel_16.Text = " Data Size"
+TextLabel_16.TextColor3 = Color3.fromRGB(194, 198, 202)
+TextLabel_16.TextScaled = true
+TextLabel_16.TextSize = 14.000
+TextLabel_16.TextWrapped = true
+TextLabel_16.TextXAlignment = Enum.TextXAlignment.Left
+
+DataSize.Name = "DataSize"
+DataSize.Parent = Dupe_2
+DataSize.BackgroundColor3 = Color3.fromRGB(51, 51, 61)
+DataSize.Position = UDim2.new(0.853535354, 0, 0.339285702, 0)
+DataSize.Size = UDim2.new(0, 23, 0, 24)
+DataSize.Font = Enum.Font.SourceSans
+DataSize.Text = ""
+DataSize.TextColor3 = Color3.fromRGB(181, 181, 181)
+DataSize.TextScaled = true
+DataSize.TextSize = 14.000
+DataSize.TextWrapped = true
+
+UICorner_15.CornerRadius = UDim.new(0, 3)
+UICorner_15.Parent = DataSize
+
+Home.Name = "Home"
+Home.Parent = Main
+Home.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Home.BackgroundTransparency = 1.000
+Home.Position = UDim2.new(0, 0, 0.173431739, 0)
+Home.Size = UDim2.new(0, 396, 0, 224)
+Home.Visible = false
+
+TextLabel_17.Parent = Home
+TextLabel_17.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+TextLabel_17.BackgroundTransparency = 0.800
+TextLabel_17.Position = UDim2.new(0, 0, 0.03125, 0)
+TextLabel_17.Size = UDim2.new(0, 395, 0, 29)
+TextLabel_17.Font = Enum.Font.SourceSans
+TextLabel_17.Text = " Welcome to Elder enter a new tab to continue "
+TextLabel_17.TextColor3 = Color3.fromRGB(194, 198, 202)
+TextLabel_17.TextScaled = true
+TextLabel_17.TextSize = 14.000
+TextLabel_17.TextWrapped = true
+
+TextLabel_18.Parent = Home
+TextLabel_18.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+TextLabel_18.BackgroundTransparency = 0.800
+TextLabel_18.Position = UDim2.new(0, 0, 0.223214284, 0)
+TextLabel_18.Size = UDim2.new(0, 395, 0, 29)
+TextLabel_18.Font = Enum.Font.SourceSans
+TextLabel_18.Text = "Whats New?"
+TextLabel_18.TextColor3 = Color3.fromRGB(194, 198, 202)
+TextLabel_18.TextScaled = true
+TextLabel_18.TextSize = 14.000
+TextLabel_18.TextWrapped = true
+
+TextLabel_19.Parent = Home
+TextLabel_19.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+TextLabel_19.BackgroundTransparency = 0.800
+TextLabel_19.Position = UDim2.new(0, 0, 0.419642836, 0)
+TextLabel_19.Size = UDim2.new(0, 395, 0, 29)
+TextLabel_19.Font = Enum.Font.SourceSans
+TextLabel_19.Text = "1. Added Dupe Section"
+TextLabel_19.TextColor3 = Color3.fromRGB(194, 198, 202)
+TextLabel_19.TextScaled = true
+TextLabel_19.TextSize = 14.000
+TextLabel_19.TextWrapped = true
+
+TextLabel_20.Parent = Home
+TextLabel_20.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+TextLabel_20.BackgroundTransparency = 0.800
+TextLabel_20.Position = UDim2.new(0, 0, 0.593749881, 0)
+TextLabel_20.Size = UDim2.new(0, 395, 0, 39)
+TextLabel_20.Font = Enum.Font.SourceSans
+TextLabel_20.Text = "Dupes were bugged for a while from camera being glitched and alot of other problems are now fixed"
+TextLabel_20.TextColor3 = Color3.fromRGB(194, 198, 202)
+TextLabel_20.TextScaled = true
+TextLabel_20.TextSize = 14.000
+TextLabel_20.TextWrapped = true
+
+TextLabel_21.Parent = Home
+TextLabel_21.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+TextLabel_21.BackgroundTransparency = 0.800
+TextLabel_21.Position = UDim2.new(0.00252525252, 0, 0.825892746, 0)
+TextLabel_21.Size = UDim2.new(0, 395, 0, 39)
+TextLabel_21.Font = Enum.Font.SourceSans
+TextLabel_21.Text = "More updates will be coming shortly, stay tuned"
+TextLabel_21.TextColor3 = Color3.fromRGB(194, 198, 202)
+TextLabel_21.TextScaled = true
+TextLabel_21.TextSize = 14.000
+TextLabel_21.TextWrapped = true
+
+-- Scripts:
+
+local function RMQXY_fake_script() -- Frame.TabHandler 
+	local script = Instance.new('LocalScript', Frame)
+
+	local PlayerFrame = script.Parent.Parent:FindFirstChild("Player")
+	local CarFrame = script.Parent.Parent:FindFirstChild("Car")
+	local MiscFrame = script.Parent.Parent:FindFirstChild("Misc")
+	local WoodFrame = script.Parent.Parent:FindFirstChild("Wood")
+	local DupeFrame = script.Parent.Parent:FindFirstChild("Dupe")
+	local Home = script.Parent.Parent:FindFirstChild("Home")
+	
+	script.Parent.Player.MouseButton1Down:Connect(function()
+		PlayerFrame.Visible = true
+		CarFrame.Visible = false
+		MiscFrame.Visible = false
+		WoodFrame.Visible = false
+		DupeFrame.Visible = false
+		Home.Visible = false
+	end)
+	
+	script.Parent.Car.MouseButton1Down:Connect(function()
+		PlayerFrame.Visible = false
+		CarFrame.Visible = true
+		MiscFrame.Visible = false
+		WoodFrame.Visible = false
+		DupeFrame.Visible = false
+		Home.Visible = false
+	end)
+	
+	script.Parent.Wood.MouseButton1Down:Connect(function()
+		PlayerFrame.Visible = false
+		CarFrame.Visible = false
+		MiscFrame.Visible = false
+		WoodFrame.Visible = true
+		DupeFrame.Visible = false
+		Home.Visible = false
+	end)
+	
+	script.Parent.Misc.MouseButton1Down:Connect(function()
+		PlayerFrame.Visible = false
+		CarFrame.Visible = false
+		MiscFrame.Visible = true
+		WoodFrame.Visible = false
+		DupeFrame.Visible = false
+		Home.Visible = false
+	end)
+	
+	script.Parent.Dupe.MouseButton1Down:Connect(function()
+		PlayerFrame.Visible = false
+		CarFrame.Visible = false
+		MiscFrame.Visible = false
+		WoodFrame.Visible = false
+		DupeFrame.Visible = true
+		Home.Visible = false
+	end)
+end
+coroutine.wrap(RMQXY_fake_script)()
+local function KZNKZTL_fake_script() -- Fill.SliderWS 
+	local script = Instance.new('LocalScript', Fill)
+
+	local UserInputService = game:GetService("UserInputService")
+	local Dragging = false
+	script.Parent.WSSlider.MouseButton1Down:Connect(function()
+		Dragging = true
+	end)
+	
+	UserInputService.InputChanged:Connect(function()
+		if Dragging then
+			local MousePos = UserInputService:GetMouseLocation()+Vector2.new(0,36)
+			local RelPos = MousePos-script.Parent.AbsolutePosition
+			local Precent = math.clamp(RelPos.X/script.Parent.AbsoluteSize.X,0,1)
+			script.Parent.WSSlider.Position = UDim2.new(Precent,0,0.5,0)
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Precent*100
+		end
+	end)
+	
+	UserInputService.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			Dragging = false
+		end
+	end)
+end
+coroutine.wrap(KZNKZTL_fake_script)()
+local function RLMMWM_fake_script() -- Fill_2.SliderJP 
+	local script = Instance.new('LocalScript', Fill_2)
+
+	local UserInputService = game:GetService("UserInputService")
+	local Dragging = false
+	script.Parent.JPSlider.MouseButton1Down:Connect(function()
+		Dragging = true
+	end)
+	
+	UserInputService.InputChanged:Connect(function()
+		if Dragging then
+			local MousePos = UserInputService:GetMouseLocation()+Vector2.new(0,36)
+			local RelPos = MousePos-script.Parent.AbsolutePosition
+			local Precent = math.clamp(RelPos.X/script.Parent.AbsoluteSize.X,0,1)
+			script.Parent.JPSlider.Position = UDim2.new(Precent,0,0.5,0)
+			game.Players.LocalPlayer.Character.Humanoid.JumpPower = Precent*100
+		end
+	end)
+	
+	UserInputService.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			Dragging = false
+		end
+	end)
+end
+coroutine.wrap(RLMMWM_fake_script)()
+local function MPAQL_fake_script() -- Fill_3.SliderHH 
+	local script = Instance.new('LocalScript', Fill_3)
+
+	local UserInputService = game:GetService("UserInputService")
+	local Dragging = false
+	script.Parent.HHSlider.MouseButton1Down:Connect(function()
+		Dragging = true
+	end)
+	
+	UserInputService.InputChanged:Connect(function()
+		if Dragging then
+			local MousePos = UserInputService:GetMouseLocation()+Vector2.new(0,36)
+			local RelPos = MousePos-script.Parent.AbsolutePosition
+			local Precent = math.clamp(RelPos.X/script.Parent.AbsoluteSize.X,0,1)
+			script.Parent.HHSlider.Position = UDim2.new(Precent,0,0.5,0)
+			game.Players.LocalPlayer.Character.Humanoid.HipHeight = Precent*100
+		end
+	end)
+	
+	UserInputService.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			Dragging = false
+		end
+	end)
+end
+coroutine.wrap(MPAQL_fake_script)()
+local function BTSJHR_fake_script() -- Fill_4.SliderCS 
+	local script = Instance.new('LocalScript', Fill_4)
+
+	local UserInputService = game:GetService("UserInputService")
+	local Dragging = false
+	script.Parent.CarSpeed.MouseButton1Down:Connect(function()
+		Dragging = true
+	end)
+	
+	UserInputService.InputChanged:Connect(function()
+		if Dragging then
+			local MousePos = UserInputService:GetMouseLocation()+Vector2.new(0,36)
+			local RelPos = MousePos-script.Parent.AbsolutePosition
+			local Precent = math.clamp(RelPos.X/script.Parent.AbsoluteSize.X,0,1)
+			script.Parent.CarSpeed.Position = UDim2.new(Precent,0,0.5,0)
+			--Code Section by Zeiro
+			local seat = game.Players.LocalPlayer.Character.Humanoid.SeatPart
+			if seat ~= nil then
+				if seat.Name == "DriveSeat" then
+					if seat.Parent:FindFirstChild("Configuration") then
+						if seat.Parent.Configuration:FindFirstChild("MaxSpeed") then
+							seat.Parent.Configuration.MaxSpeed.Value = Precent*100
+						end
+					end
+				end
+			end
+		end
+	end)
+	
+	UserInputService.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			Dragging = false
+		end
+	end)
+end
+coroutine.wrap(BTSJHR_fake_script)()
+local function RQUB_fake_script() -- Fill_5.SliderSV 
+	local script = Instance.new('LocalScript', Fill_5)
+
+	local UserInputService = game:GetService("UserInputService")
+	local Dragging = false
+	script.Parent.SteerVelocity.MouseButton1Down:Connect(function()
+		Dragging = true
+	end)
+	
+	UserInputService.InputChanged:Connect(function()
+		if Dragging then
+			local MousePos = UserInputService:GetMouseLocation()+Vector2.new(0,36)
+			local RelPos = MousePos-script.Parent.AbsolutePosition
+			local Precent = math.clamp(RelPos.X/script.Parent.AbsoluteSize.X,0,1)
+			script.Parent.SteerVelocity.Position = UDim2.new(Precent,0,0.5,0)
+			--Code Section by Zeiro
+			local seat = game.Players.LocalPlayer.Character.Humanoid.SeatPart
+			if seat ~= nil then
+				if seat.Name == "DriveSeat" then
+					if seat.Parent:FindFirstChild("Configuration") then
+						if seat.Parent.Configuration:FindFirstChild("MaxSpeed") then
+							seat.Parent.Configuration.SteerVelocity.Value = Precent*100
+						end
+					end
+				end
+			end
+		end
+	end)
+	
+	UserInputService.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			Dragging = false
+		end
+	end)
+end
+coroutine.wrap(RQUB_fake_script)()
+local function JDFRAU_fake_script() -- Fill_6.SliderSA 
+	local script = Instance.new('LocalScript', Fill_6)
+
+	local UserInputService = game:GetService("UserInputService")
+	local Dragging = false
+	script.Parent.SteerAngle.MouseButton1Down:Connect(function()
+		Dragging = true
+	end)
+	
+	UserInputService.InputChanged:Connect(function()
+		if Dragging then
+			local MousePos = UserInputService:GetMouseLocation()+Vector2.new(0,36)
+			local RelPos = MousePos-script.Parent.AbsolutePosition
+			local Precent = math.clamp(RelPos.X/script.Parent.AbsoluteSize.X,0,1)
+			script.Parent.SteerAngle.Position = UDim2.new(Precent,0,0.5,0)
+			--Code Section by Zeiro
+			local seat = game.Players.LocalPlayer.Character.Humanoid.SeatPart
+			if seat ~= nil then
+				if seat.Name == "DriveSeat" then
+					if seat.Parent:FindFirstChild("Configuration") then
+						if seat.Parent.Configuration:FindFirstChild("MaxSpeed") then
+							seat.Parent.Configuration.SteerAngle.Value = Precent*100
+						end
+					end
+				end
+			end
+		end
+	end)
+	
+	UserInputService.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			Dragging = false
+		end
+	end)
+end
+coroutine.wrap(JDFRAU_fake_script)()
+local function TTFQA_fake_script() -- Main.Drag 
+	local script = Instance.new('LocalScript', Main)
+
+	local UIS = game:GetService("UserInputService")
+	function drag (Frame)
+		dragToggle = nil
+		dragSpeed = 0.23
+		dragInput = nil
+		dragStart = nil
+		dragPos = nil
+		function updateInput(input)
+			Delta = input.Position - dragStart
+			Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	drag(script.Parent)
+	
+end
+coroutine.wrap(TTFQA_fake_script)()
+local function BYVMMGY_fake_script() -- FreezeWater.LocalScript 
+	local script = Instance.new('LocalScript', FreezeWater)
+
+	local toggle = false
+	local Tween = game:GetService("TweenService")
+	local function turnBlue()
+		local Parent = script.Parent
+		local change2 = {
+			BackgroundColor3 = Color3.new(0.247059, 0.560784, 1)
+		}
+		--Change Way
+		local tinfo = TweenInfo.new(
+			0.2, --time
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out,
+			0,
+			false,
+			0
+		)
+		--Playing Tween
+	
+		local twn2 = Tween:Create(Parent,tinfo,change2)
+		twn2:Play()
+	end
+	
+	local function turnBack()
+		local Parent = script.Parent
+		local change2 = {
+			BackgroundColor3 = Color3.new(0.2, 0.2, 0.239216)
+		}
+		--Change Way
+		local tinfo = TweenInfo.new(
+			0.2, --time
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out,
+			0,
+			false,
+			0
+		)
+		--Playing Tween
+	
+		local twn2 = Tween:Create(Parent,tinfo,change2)
+		twn2:Play()
+	end
+	script.Parent.MouseButton1Click:Connect(function()
+		if not toggle then
+			toggle = true
+			turnBlue()
+			script.Parent.Text = "✓"
+			for _,v in pairs(game:GetService("Workspace").Water:GetChildren()) do
+				if tostring(v) == "Water" then
+					v.CanCollide = true
+				end
+			end
+			game:GetService("Workspace").Bridge.VerticalLiftBridge.WaterModel.Water.CanCollide = true
+		else
+			toggle = false
+			turnBack()
+			script.Parent.Text = ""
+			for _,v in pairs(game:GetService("Workspace").Water:GetChildren()) do
+				if tostring(v) == "Water" then
+					v.CanCollide = false
+				end
+			end
+			game:GetService("Workspace").Bridge.VerticalLiftBridge.WaterModel.Water.CanCollide = false
+		end
+	end)
+	
+	
+end
+coroutine.wrap(BYVMMGY_fake_script)()
+local function WCADCKO_fake_script() -- RemoveAC.LocalScript 
+	local script = Instance.new('LocalScript', RemoveAC)
+
+	local toggle = false
+	local Tween = game:GetService("TweenService")
+	local function turnBlue()
+		local Parent = script.Parent
+		local change2 = {
+			BackgroundColor3 = Color3.new(0.247059, 0.560784, 1)
+		}
+		--Change Way
+		local tinfo = TweenInfo.new(
+			0.2, --time
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out,
+			0,
+			false,
+			0
+		)
+		--Playing Tween
+	
+		local twn2 = Tween:Create(Parent,tinfo,change2)
+		twn2:Play()
+	end
+	
+	local function turnBack()
+		local Parent = script.Parent
+		local change2 = {
+			BackgroundColor3 = Color3.new(0.2, 0.2, 0.239216)
+		}
+		--Change Way
+		local tinfo = TweenInfo.new(
+			0.2, --time
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out,
+			0,
+			false,
+			0
+		)
+		--Playing Tween
+	
+		local twn2 = Tween:Create(Parent,tinfo,change2)
+		twn2:Play()
+	end
+	script.Parent.MouseButton1Click:Connect(function()
+			turnBlue()
+			script.Parent.Text = "✓"
+			game:GetService("Players").LocalPlayer.Character:FindFirstChild("Clean2"):Destroy()
+	end)
+	
+	
+end
+coroutine.wrap(WCADCKO_fake_script)()
+local function NKXZG_fake_script() -- GetML.LocalScript 
+	local script = Instance.new('LocalScript', GetML)
+
+	local toggle = false
+	local Tween = game:GetService("TweenService")
+	local function turnBlue()
+		local Parent = script.Parent
+		local change2 = {
+			BackgroundColor3 = Color3.new(0.247059, 0.560784, 1)
+		}
+		--Change Way
+		local tinfo = TweenInfo.new(
+			0.2, --time
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out,
+			0,
+			false,
+			0
+		)
+		--Playing Tween
+	
+		local twn2 = Tween:Create(Parent,tinfo,change2)
+		twn2:Play()
+	end
+	
+	local function turnBack()
+		local Parent = script.Parent
+		local change2 = {
+			BackgroundColor3 = Color3.new(0.2, 0.2, 0.239216)
+		}
+		--Change Way
+		local tinfo = TweenInfo.new(
+			0.2, --time
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out,
+			0,
+			false,
+			0
+		)
+		--Playing Tween
+	
+		local twn2 = Tween:Create(Parent,tinfo,change2)
+		twn2:Play()
+	end
+	script.Parent.MouseButton1Click:Connect(function()
+			turnBlue()
+			script.Parent.Text = "✓"
+		for i, v in pairs(game:GetService("Workspace").Properties:GetChildren()) do
+			if v:FindFirstChild("Owner") and v.Owner.Value == game.Players.LocalPlayer then
+				base = v
+				square = v.OriginSquare
+			end
+		end
+		function makebase(pos)
+			local Event = game:GetService("ReplicatedStorage").PropertyPurchasing.ClientExpandedProperty
+			Event:FireServer(base, pos)
+		end
+		spos = square.Position
+		makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z))
+		makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z))
+		makebase(CFrame.new(spos.X, spos.Y, spos.Z + 40))
+		makebase(CFrame.new(spos.X, spos.Y, spos.Z - 40))
+		makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z + 40))
+		makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z - 40))
+		makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z + 40))
+		makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z - 40))
+		makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z))
+		makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z))
+		makebase(CFrame.new(spos.X, spos.Y, spos.Z + 80))
+		makebase(CFrame.new(spos.X, spos.Y, spos.Z - 80))
+		--Corners--
+		makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z + 80))
+		makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z - 80))
+		makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z + 80))
+		makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z - 80))
+		--Corners--
+		makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z + 80))
+		makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z + 80))
+		makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z + 40))
+		makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z - 40))
+		makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z + 40))
+		makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z - 40))
+		makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z - 80))
+		makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z - 80))
+	end)
+end
+coroutine.wrap(NKXZG_fake_script)()
+local function MYZX_fake_script() -- ServerHP.LocalScript 
+	local script = Instance.new('LocalScript', ServerHP)
+
+	local toggle = false
+	local Tween = game:GetService("TweenService")
+	local function turnBlue()
+		local Parent = script.Parent
+		local change2 = {
+			BackgroundColor3 = Color3.new(0.247059, 0.560784, 1)
+		}
+		--Change Way
+		local tinfo = TweenInfo.new(
+			0.2, --time
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out,
+			0,
+			false,
+			0
+		)
+		--Playing Tween
+	
+		local twn2 = Tween:Create(Parent,tinfo,change2)
+		twn2:Play()
+	end
+	
+	local function turnBack()
+		local Parent = script.Parent
+		local change2 = {
+			BackgroundColor3 = Color3.new(0.2, 0.2, 0.239216)
+		}
+		--Change Way
+		local tinfo = TweenInfo.new(
+			0.2, --time
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out,
+			0,
+			false,
+			0
+		)
+		--Playing Tween
+	
+		local twn2 = Tween:Create(Parent,tinfo,change2)
+		twn2:Play()
+	end
+	script.Parent.MouseButton1Click:Connect(function()
+			turnBlue()
+		script.Parent.Text = "✓"
+		local PlaceID = game.PlaceId
+		local AllIDs = {}
+		local foundAnything = ""
+		local actualHour = os.date("!*t").hour
+		local Deleted = false
+		local File = pcall(function()
+			AllIDs = game:GetService('HttpService'):JSONDecode(readfile("NotSameServers.json"))
+		end)
+		if not File then
+			table.insert(AllIDs, actualHour)
+			writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs))
+		end
+		function TPReturner()
+			local Site;
+			if foundAnything == "" then
+				Site = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. PlaceID .. '/servers/Public?sortOrder=Asc&limit=100'))
+			else
+				Site = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. PlaceID .. '/servers/Public?sortOrder=Asc&limit=100&cursor=' .. foundAnything))
+			end
+			local ID = ""
+			if Site.nextPageCursor and Site.nextPageCursor ~= "null" and Site.nextPageCursor ~= nil then
+				foundAnything = Site.nextPageCursor
+			end
+			local num = 0;
+			for i,v in pairs(Site.data) do
+				local Possible = true
+				ID = tostring(v.id)
+				if tonumber(v.maxPlayers) > tonumber(v.playing) then
+					for _,Existing in pairs(AllIDs) do
+						if num ~= 0 then
+							if ID == tostring(Existing) then
+								Possible = false
+							end
+						else
+							if tonumber(actualHour) ~= tonumber(Existing) then
+								local delFile = pcall(function()
+									delfile("NotSameServers.json")
+									AllIDs = {}
+									table.insert(AllIDs, actualHour)
+								end)
+							end
+						end
+						num = num + 1
+					end
+					if Possible == true then
+						table.insert(AllIDs, ID)
+						wait()
+						pcall(function()
+							writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs))
+							wait()
+							game:GetService("TeleportService"):TeleportToPlaceInstance(PlaceID, ID, game.Players.LocalPlayer)
+						end)
+						wait(4)
+					end
+				end
+			end
+		end
+	
+		function Teleport()
+			while wait() do
+				pcall(function()
+					TPReturner()
+					if foundAnything ~= "" then
+						TPReturner()
+					end
+				end)
+			end
+		end
+	
+		Teleport()
+	end)
+end
+coroutine.wrap(MYZX_fake_script)()
+local function SQJWMSG_fake_script() -- FindSpookSinisterWD.LocalScript 
+	local script = Instance.new('LocalScript', FindSpookSinisterWD)
+
+	local toggle = false
+	local Tween = game:GetService("TweenService")
+	local function turnBlue()
+		local Parent = script.Parent
+		local change2 = {
+			BackgroundColor3 = Color3.new(0.247059, 0.560784, 1)
+		}
+		--Change Way
+		local tinfo = TweenInfo.new(
+			0.2, --time
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out,
+			0,
+			false,
+			0
+		)
+		--Playing Tween
+	
+		local twn2 = Tween:Create(Parent,tinfo,change2)
+		twn2:Play()
+	end
+	
+	local function turnBack()
+		local Parent = script.Parent
+		local change2 = {
+			BackgroundColor3 = Color3.new(0.2, 0.2, 0.239216)
+		}
+		--Change Way
+		local tinfo = TweenInfo.new(
+			0.2, --time
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out,
+			0,
+			false,
+			0
+		)
+		--Playing Tween
+	
+		local twn2 = Tween:Create(Parent,tinfo,change2)
+		twn2:Play()
+	end
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(workspace:GetChildren()) do
+			if v.Name == "TreeRegion" then
+				v.ChildAdded:connect(function(ni)
+					local section = ni:FindFirstChild("WoodSection")
+					ni:FindFirstChild("TreeClass")
+					if ni.TreeClass.Value == "Spooky" or ni.TreeClass.Value == "SpookyNeon" then
+						game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = section.CFrame
+					end
+				end)
+				for i,ni in pairs(v:GetChildren()) do
+					local section = ni:FindFirstChild("WoodSection")
+					ni:FindFirstChild("TreeClass")
+					if ni.TreeClass.Value == "Spooky" or ni.TreeClass.Value == "SpookyNeon" then
+						game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = section.CFrame
+					end
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(SQJWMSG_fake_script)()
+local function QQWIQSV_fake_script() -- Dupe_3.LocalScript 
+	local script = Instance.new('LocalScript', Dupe_3)
+
+	local toggle = false
+	local Tween = game:GetService("TweenService")
+	local function turnBlue()
+		local Parent = script.Parent
+		local change2 = {
+			BackgroundColor3 = Color3.new(0.247059, 0.560784, 1)
+		}
+		--Change Way
+		local tinfo = TweenInfo.new(
+			0.2, --time
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out,
+			0,
+			false,
+			0
+		)
+		--Playing Tween
+	
+		local twn2 = Tween:Create(Parent,tinfo,change2)
+		twn2:Play()
+	end
+	
+	local function turnBack()
+		local Parent = script.Parent
+		local change2 = {
+			BackgroundColor3 = Color3.new(0.2, 0.2, 0.239216)
+		}
+		--Change Way
+		local tinfo = TweenInfo.new(
+			0.2, --time
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out,
+			0,
+			false,
+			0
+		)
+		--Playing Tween
+	
+		local twn2 = Tween:Create(Parent,tinfo,change2)
+		twn2:Play()
+	end
+	script.Parent.MouseButton1Click:Connect(function()
+		local dataSize = 0
+		dataSize = script.Parent.Parent.DataSize.Text
+		
+		local plr = game.Players.LocalPlayer
+	
+		local canRelod = function()
+	
+			local ohInstance1 = plr
+	
+			return game:GetService("ReplicatedStorage").LoadSaveRequests.ClientMayLoad:InvokeServer(ohInstance1)
+		end
+	
+		function Dupe()
+			if dataSize == "" then
+				game:GetService("StarterGui"):SetCore("SendNotification", {
+					Title = "Elder";
+					Text = "Data Size cannot be left blank"
+				})
+				return
+			elseif dataSize == 0 then
+				game:GetService("StarterGui"):SetCore("SendNotification", {
+					Title = "Elder";
+					Text = "Interval error (must be higher than 0) nil"
+				})
+				return
+			end
+			turnBlue()
+			if plr.CurrentSaveSlot.Value == -1 then
+				game:GetService("StarterGui"):SetCore("SendNotification", {
+					Title = "Elder";
+					Text = "Load in the selected slot you would like to dupe"
+				})
+				return
+			elseif plr.CurrentSaveSlot.Value ~= -1 then
+				repeat
+					script.Parent.Parent:FindFirstChild("Status").Text = "Waiting for reload cooldown."
+					script.Parent.Parent:FindFirstChild("Status").Text = "Waiting for reload cooldown.."
+					script.Parent.Parent:FindFirstChild("Status").Text = "Waiting for reload cooldown..."
+					task.wait(2)
+				until canRelod()
+	
+				local ohNumber1 = plr.CurrentSaveSlot.Value
+				local ohInstance2 = plr
+	
+				task.spawn(function()
+					if dataSize == 1 then
+						script.Parent.Parent:FindFirstChild("Status").Text = "Requesting reload.."
+						task.wait(3)
+						game:GetService("ReplicatedStorage").LoadSaveRequests.RequestLoad:InvokeServer(ohNumber1, ohInstance2)
+						script.Parent.Parent:FindFirstChild("Status").Text = "Success!"
+						task.wait(3)
+						script.Parent.Parent:FindFirstChild("Status").Text = "To perform : data size you can find in the slot menu of the slot selected that you want to dupe, then this will dupe the axes"
+					elseif dataSize == 2 or 4 then
+						script.Parent.Parent:FindFirstChild("Status").Text = "Requesting reload.."
+						task.wait(2)
+						game:GetService("ReplicatedStorage").LoadSaveRequests.RequestLoad:InvokeServer(ohNumber1, ohInstance2)
+						script.Parent.Parent:FindFirstChild("Status").Text = "Success!"
+						task.wait(3)
+						script.Parent.Parent:FindFirstChild("Status").Text = "To perform : data size you can find in the slot menu of the slot selected that you want to dupe, then this will dupe the axes"
+					elseif dataSize == 5 or 7 then
+						script.Parent.Parent:FindFirstChild("Status").Text = "Requesting reload.."
+						task.wait(1)
+						game:GetService("ReplicatedStorage").LoadSaveRequests.RequestLoad:InvokeServer(ohNumber1, ohInstance2)
+						script.Parent.Parent:FindFirstChild("Status").Text = "Success!"
+						task.wait(3)
+						script.Parent.Parent:FindFirstChild("Status").Text = "To perform : data size you can find in the slot menu of the slot selected that you want to dupe, then this will dupe the axes"
+					end
+				end)
+				script.Parent.Parent:FindFirstChild("Status").Text = "Performing dupe.."
+				task.wait()
+				plr.Character:FindFirstChild("Head"):Destroy()
+				return
+			end
+		end
+		local suces, mesg = Dupe()
+		if suces then
+			print(mesg)
+		elseif not suces then
+			warn(mesg)
+		end
+		wait(1)
+			turnBack()
+	end)
+end
+coroutine.wrap(QQWIQSV_fake_script)()
+local function DVEFKCV_fake_script() -- DataSize.LocalScript 
+	local script = Instance.new('LocalScript', DataSize)
+
+	local TextBox = script.Parent
+	
+	TextBox:GetPropertyChangedSignal("Text"):Connect(function()
+		TextBox.Text = TextBox.Text:gsub('%D+', '');
+		end)
+end
+coroutine.wrap(DVEFKCV_fake_script)()
